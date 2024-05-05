@@ -1,5 +1,7 @@
 # Mines vs. Rocks
 
+Original Dataset source: https://archive.ics.uci.edu/dataset/151/connectionist+bench+sonar+mines+vs+rocks
+
 ## Disclaimer
 This repository serves as a homework assignment with the goal of training a model capable of distinguishing between "mines" and "rocks" by analyzing bouncing sonar signals. The majority of the functions and code have been developed by myself for learning purposes. 
 
@@ -12,6 +14,7 @@ Points to denote:
 * The Log Loss function is applied as sigmoid during Gradient Descent as activation function.
 * For training purposes, I utilize the calculus derivative function of the sigmoid within Gradient Descent to minimize loss.
 * Essentially, the approach to detecting mines involves training a binary classification model.
+* You can download a copy of the trained model: https://github.com/DanyelMorales/MinesRocks/blob/main/cache/rocks_mines_weights73.46938775510205.npy
 
 ## About dataset
 The dataset comprises two files: "sonar.mines" and "sonar.rocks", containing 111 and 97 patterns, respectively. These patterns were acquired by bouncing sonar signals off a metal cylinder and rocks under similar conditions. The sonar signals are frequency-modulated chirps rising in frequency, obtained from various aspect angles spanning 90 degrees for the cylinder and 180 degrees for the rock.
