@@ -5,6 +5,12 @@ Each pattern consists of 60 numbers ranging from 0.0 to 1.0, representing the en
 
 The label associated with each record indicates whether the object is a rock ("R") or a mine (metal cylinder, "M"). The labels are sorted in increasing order of aspect angle but do not directly encode the angle.
 
+## Dataset 
+
+* The primary dataset comprises 208 examples, from which I am selecting 48 examples for testing purposes, representing a subset of the total dataset.
+* The Y axis is encoded using a custom one-hot encoding strategy, primarily focusing on encoding rows where a Mine is detected, while all other instances are denoted as 0.
+* The Log Loss function is applied as sigmoid during Gradient Descent as activation function.
+* For training purposes, I utilize the calculus derivative function of the sigmoid within Gradient Descent to minimize loss.
 
 ## Observations
 
