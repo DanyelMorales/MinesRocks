@@ -1,4 +1,11 @@
 # Mines vs. Rocks
+
+## Disclaimer
+This repository serves as a homework assignment with the goal of training a model capable of distinguishing between "mines" and "rocks" by analyzing bouncing sonar signals. The majority of the functions and code have been developed by myself for learning purposes. 
+
+Note: It's advised to refrain from using any of this code in production environments due to its instability. The only libraries employed are Numpy, Pandas, and Matplotlib.
+
+## About dataset
 The dataset comprises two files: "sonar.mines" and "sonar.rocks", containing 111 and 97 patterns, respectively. These patterns were acquired by bouncing sonar signals off a metal cylinder and rocks under similar conditions. The sonar signals are frequency-modulated chirps rising in frequency, obtained from various aspect angles spanning 90 degrees for the cylinder and 180 degrees for the rock.
 
 Each pattern consists of 60 numbers ranging from 0.0 to 1.0, representing the energy within specific frequency bands integrated over time. Higher frequencies are integrated over later periods since they are transmitted later during the chirp.
