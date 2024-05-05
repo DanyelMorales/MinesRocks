@@ -5,6 +5,14 @@ This repository serves as a homework assignment with the goal of training a mode
 
 Note: It's advised to refrain from using any of this code in production environments due to its instability. The only libraries employed are Numpy, Pandas, and Matplotlib.
 
+Points to denote:
+
+* The primary dataset comprises 208 examples, from which I am selecting 48 examples for testing purposes, representing a subset of the total dataset.
+* The Y axis is encoded using a custom one-hot encoding strategy, primarily focusing on encoding rows where a Mine is detected, while all other instances are denoted as 0.
+* The Log Loss function is applied as sigmoid during Gradient Descent as activation function.
+* For training purposes, I utilize the calculus derivative function of the sigmoid within Gradient Descent to minimize loss.
+* Essentially, the approach to detecting mines involves training a binary classification model.
+
 ## About dataset
 The dataset comprises two files: "sonar.mines" and "sonar.rocks", containing 111 and 97 patterns, respectively. These patterns were acquired by bouncing sonar signals off a metal cylinder and rocks under similar conditions. The sonar signals are frequency-modulated chirps rising in frequency, obtained from various aspect angles spanning 90 degrees for the cylinder and 180 degrees for the rock.
 
@@ -12,12 +20,7 @@ Each pattern consists of 60 numbers ranging from 0.0 to 1.0, representing the en
 
 The label associated with each record indicates whether the object is a rock ("R") or a mine (metal cylinder, "M"). The labels are sorted in increasing order of aspect angle but do not directly encode the angle.
 
-## Dataset 
-
-* The primary dataset comprises 208 examples, from which I am selecting 48 examples for testing purposes, representing a subset of the total dataset.
-* The Y axis is encoded using a custom one-hot encoding strategy, primarily focusing on encoding rows where a Mine is detected, while all other instances are denoted as 0.
-* The Log Loss function is applied as sigmoid during Gradient Descent as activation function.
-* For training purposes, I utilize the calculus derivative function of the sigmoid within Gradient Descent to minimize loss.
+ 
 
 ## Observations
 
