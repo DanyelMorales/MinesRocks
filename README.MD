@@ -13,7 +13,7 @@ Points to denote:
 * The Y axis is encoded using a custom one-hot encoding strategy, primarily focusing on encoding rows where a Mine is detected, while all other instances are denoted as 0.
 * The Log Loss function is applied as sigmoid during Gradient Descent as activation function.
 * For training purposes, I utilize the calculus derivative function of the sigmoid within Gradient Descent to minimize loss.
-* Essentially, the approach to detecting mines involves training a binary classification model.
+* Essentially, the approach to detecting mines involves training a binary classification model implemented using perceptrons.
 * You can download a copy of the trained model: https://github.com/DanyelMorales/MinesRocks/blob/main/cache/rocks_mines_weights73.46938775510205.npy
 
 ## About dataset
